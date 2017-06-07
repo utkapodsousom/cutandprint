@@ -1,21 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=cyrillic");
 /* line 10, style.sass */
-body,
-html {
+* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+/* line 13, style.sass */
+body,
+html {
   background-color: #fff;
   font-size: 1em;
   line-height: 1.45;
   font-family: "Open Sans", serif;
 }
 
-/* line 18, style.sass */
+/* line 20, style.sass */
 p {
   margin-bottom: 1.3em;
 }
 
-/* line 21, style.sass */
+/* line 23, style.sass */
 h1,
 h2,
 h3,
@@ -26,90 +30,150 @@ h4 {
   text-transform: uppercase;
 }
 
-/* line 30, style.sass */
+/* line 32, style.sass */
 h1 {
   margin-top: 0;
   font-size: 3.157em;
 }
 
-/* line 34, style.sass */
+/* line 36, style.sass */
 h2 {
   font-size: 2.369em;
   color: #343a45;
   text-align: center;
 }
 
-/* line 39, style.sass */
+/* line 41, style.sass */
 h3 {
   font-size: 1.777em;
 }
 
-/* line 42, style.sass */
+/* line 44, style.sass */
 h4 {
   font-size: 1.333em;
 }
 
-/* line 45, style.sass */
+/* line 47, style.sass */
 small,
 .font_small {
   font-size: 0.75em;
 }
 
-/* line 49, style.sass */
+/* line 51, style.sass */
 ul {
   padding: 0;
 }
 
-/* line 52, style.sass */
+/* line 54, style.sass */
 .ast {
   color: red;
 }
 
-/* line 55, style.sass */
+/* line 57, style.sass */
 #wrapper {
   position: relative;
 }
 
-/* line 59, style.sass */
-#logo > a ul {
-  list-style: none;
-}
-/* line 62, style.sass */
-#logo > a ul li {
-  display: inline;
-}
-/* line 65, style.sass */
-#logo > a ul li p {
-  display: inherit;
+/* line 60, style.sass */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px 40px;
+  background-color: #3d3d3d;
+  z-index: 1;
 }
 
-/* line 68, style.sass */
-.topmenu {
-  list-style: none;
+/* line 69, style.sass */
+#logo {
+  float: left;
 }
-/* line 71, style.sass */
-.topmenu li {
-  display: inline;
+/* line 72, style.sass */
+#logo a {
+  text-decoration: none;
 }
 /* line 74, style.sass */
+#logo a:hover, #logo a:visited {
+  text-decoration: none;
+  color: #d5dde5;
+}
+/* line 79, style.sass */
+#logo > a ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 83, style.sass */
+#logo > a ul li {
+  height: 50px;
+  float: left;
+}
+/* line 87, style.sass */
+#logo > a ul li img {
+  vertical-align: middle;
+}
+/* line 90, style.sass */
+#logo > a ul li p {
+  display: inherit;
+  font-size: 2em;
+  color: #d5dde5;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* line 99, style.sass */
+.topmenu {
+  list-style: none;
+  float: right;
+}
+/* line 103, style.sass */
+.topmenu li {
+  display: inline;
+  margin-left: 10px;
+}
+/* line 107, style.sass */
+.topmenu li a {
+  color: #d5dde5;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.9em;
+  -webkit-transition: color 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out;
+}
+/* line 115, style.sass */
+.topmenu li:hover a {
+  color: #db7746;
+}
+/* line 118, style.sass */
 .topmenu .submenu {
   display: none;
 }
 
-/* line 77, style.sass */
+/* line 121, style.sass */
 .contentContainer {
   margin: 0;
   padding: 60px 0;
 }
 
-/* line 81, style.sass */
+/* line 125, style.sass */
 #about {
   display: -webkit-flex;
   display: -ms-flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 100vh;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  text-align: center;
+  height: 100vh;
   background-image: url("../images/mainImg2.jpg");
   background-position: center center;
   background-size: cover;
@@ -117,7 +181,22 @@ ul {
   background-attachment: fixed;
 }
 
-/* line 94, style.sass */
+/* line 140, style.sass */
+#overlay {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px 0;
+}
+/* line 145, style.sass */
+#overlay h1 {
+  color: #db7746;
+}
+/* line 148, style.sass */
+#overlay p {
+  color: #d5dde5;
+}
+
+/* line 152, style.sass */
 #serviceList {
   display: -webkit-flex;
   display: -ms-flex;
@@ -131,10 +210,10 @@ ul {
           flex-direction: row;
 }
 
-/* line 100, style.sass */
+/* line 158, style.sass */
 .service_container {
   margin: 0;
-  padding: 20px;
+  padding: 40px;
   text-align: center;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -144,12 +223,19 @@ ul {
       -ms-flex-preferred-size: 0;
           flex-basis: 0;
 }
-/* line 108, style.sass */
+/* line 166, style.sass */
 .service_container > p {
   text-align: justify;
 }
 
-/* line 111, style.sass */
+/* line 170, style.sass */
+.serviceTitle h3 {
+  background-color: #db7746;
+  color: #fff;
+  padding: 5px 0;
+}
+
+/* line 175, style.sass */
 .bg_header {
   display: block;
   margin: 0;
@@ -157,35 +243,35 @@ ul {
   position: relative;
   margin-bottom: 60px;
 }
-/* line 118, style.sass */
+/* line 182, style.sass */
 .bg_header > img {
   min-width: 100%;
 }
-/* line 121, style.sass */
+/* line 185, style.sass */
 .bg_header .small_title {
   position: absolute;
   left: 40px;
   bottom: 40px;
   line-height: 32px;
 }
-/* line 127, style.sass */
+/* line 191, style.sass */
 .bg_header .small_title > img {
   float: left;
   margin-right: 10px;
 }
-/* line 131, style.sass */
+/* line 195, style.sass */
 .bg_header .small_title > h3 {
   float: left;
   margin: 0;
   color: #d5dde5;
 }
 
-/* line 136, style.sass */
+/* line 200, style.sass */
 .datagrid {
   padding: 40px 0;
 }
 
-/* line 139, style.sass */
+/* line 203, style.sass */
 .price_table {
   background-color: #fff;
   border-radius: 3px;
@@ -194,7 +280,7 @@ ul {
   max-width: 80%;
   padding: 5px;
 }
-/* line 147, style.sass */
+/* line 211, style.sass */
 .price_table th {
   color: #d5dde5;
   background-color: #3d3d3d;
@@ -205,16 +291,16 @@ ul {
   text-align: left;
   vertical-align: middle;
 }
-/* line 157, style.sass */
+/* line 221, style.sass */
 .price_table th:first-child {
   border-top-left-radius: 3px;
 }
-/* line 160, style.sass */
+/* line 224, style.sass */
 .price_table th:last-child {
   border-top-right-radius: 3px;
   border-right: none;
 }
-/* line 164, style.sass */
+/* line 228, style.sass */
 .price_table tr {
   border-top: 1px solid #9a9c9e;
   border-bottom: 1px solid #9a9c9e;
@@ -222,46 +308,46 @@ ul {
   font-size: 1em;
   font-weight: normal;
 }
-/* line 171, style.sass */
+/* line 235, style.sass */
 .price_table tr:hover td {
   background-color: #4a4a62;
   color: #fff;
   border-top: 1px solid #d5dde5;
   border-bottom: 1px solid #d5dde5;
 }
-/* line 177, style.sass */
+/* line 241, style.sass */
 .price_table tr:first-child {
   border-top: none;
 }
-/* line 180, style.sass */
+/* line 244, style.sass */
 .price_table tr:first-child td {
   border-top: none;
 }
-/* line 183, style.sass */
+/* line 247, style.sass */
 .price_table tr:last-child {
   border-bottom: none;
 }
-/* line 186, style.sass */
+/* line 250, style.sass */
 .price_table tr:last-child td {
   border-bottom: none;
 }
-/* line 189, style.sass */
+/* line 253, style.sass */
 .price_table tr:nth-child(odd) td {
   background: #d5dde5;
 }
-/* line 192, style.sass */
+/* line 256, style.sass */
 .price_table tr:nth-child(odd):hover td {
   background: #4a5262;
 }
-/* line 195, style.sass */
+/* line 259, style.sass */
 .price_table tr:last-child td:first-child {
   border-bottom-left-radius: 3px;
 }
-/* line 198, style.sass */
+/* line 262, style.sass */
 .price_table tr:last-child td:last-child {
   border-bottom-right-radius: 3px;
 }
-/* line 201, style.sass */
+/* line 265, style.sass */
 .price_table td {
   background-color: #fff;
   padding: 10px;
@@ -271,64 +357,64 @@ ul {
   font-size: 1em;
   border-right: 1px solid #9a9c9e;
 }
-/* line 210, style.sass */
+/* line 274, style.sass */
 .price_table td:last-child {
   border-right: 0px;
 }
-/* line 213, style.sass */
+/* line 277, style.sass */
 .price_table td.text-left {
   text-align: left;
 }
-/* line 216, style.sass */
+/* line 280, style.sass */
 .price_table td.text-center {
   text-align: center;
 }
-/* line 219, style.sass */
+/* line 283, style.sass */
 .price_table td.text-right {
   text-align: right;
 }
-/* line 222, style.sass */
+/* line 286, style.sass */
 .price_table th.text-left {
   text-align: left;
 }
-/* line 225, style.sass */
+/* line 289, style.sass */
 .price_table th.text-center {
   text-align: center;
 }
-/* line 228, style.sass */
+/* line 292, style.sass */
 .price_table th.text-right {
   text-align: right;
 }
 
-/* line 231, style.sass */
+/* line 295, style.sass */
 .notice {
   max-width: 60%;
   margin: auto;
   text-align: left;
 }
-/* line 236, style.sass */
+/* line 300, style.sass */
 .notice p {
   font-size: 0.8em;
   text-indent: -7px;
 }
 
-/* line 240, style.sass */
+/* line 304, style.sass */
 .keywords {
   max-width: 80%;
   margin: auto;
 }
-/* line 244, style.sass */
+/* line 308, style.sass */
 .keywords p {
   text-align: justify;
   margin-top: 40px;
 }
 
-/* line 248, style.sass */
+/* line 312, style.sass */
 .border_orange {
   margin-bottom: 60px;
 }
 
-/* line 251, style.sass */
+/* line 315, style.sass */
 .border_orange::before {
   content: " ";
   display: block;
@@ -339,7 +425,7 @@ ul {
   background-color: #db7746;
 }
 
-/* line 260, style.sass */
+/* line 324, style.sass */
 .paynget_block {
   display: -webkit-flex;
   display: -ms-flex;
@@ -358,7 +444,7 @@ ul {
   text-align: center;
 }
 
-/* line 268, style.sass */
+/* line 332, style.sass */
 footer {
   display: -webkit-flex;
   display: -ms-flex;
@@ -373,26 +459,26 @@ footer {
   padding: 20px 40px;
   background-color: #4a5262;
 }
-/* line 277, style.sass */
+/* line 341, style.sass */
 footer #copyrights p {
   color: #d5dde5;
 }
-/* line 280, style.sass */
+/* line 344, style.sass */
 footer #social {
   height: 100%;
   margin-left: auto;
 }
-/* line 284, style.sass */
+/* line 348, style.sass */
 footer #social a {
   vertical-align: middle;
   color: #d5dde5;
 }
-/* line 288, style.sass */
+/* line 352, style.sass */
 footer #social a svg {
   width: 60px;
   height: 60px;
 }
-/* line 292, style.sass */
+/* line 356, style.sass */
 footer #social a span {
   display: block;
   float: left;
@@ -405,14 +491,14 @@ footer #social a span {
   -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-/* line 303, style.sass */
+/* line 367, style.sass */
 footer #social a:hover span {
   width: 120px;
   text-indent: 0px;
   color: #d5dde5;
 }
 
-/* line 308, style.sass */
+/* line 372, style.sass */
 .go-top {
   position: fixed;
   display: inline-block;

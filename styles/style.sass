@@ -7,9 +7,11 @@ $dark-gray: #343a45
 $light-gray: lighten($dark-gray, 10%)
 $light-border: #9a9c9e
 
+*
+  box-sizing: border-box
+
 body,
 html
-  box-sizing: border-box
   background-color: #fff
   font-size: 1em
   line-height: 1.45
@@ -55,21 +57,63 @@ ul
 #wrapper
   position: relative
 
+header
+  position: fixed
+  width: 100%
+  top: 0
+  left: 0
+  padding: 20px 40px
+  background-color: $dark-bg
+  z-index: 1
+
 #logo
+  float: left
+
+  a
+    text-decoration: none
+    &:hover,
+    &:visited
+      text-decoration: none
+      color: $light-text-color
+
   > a ul
     list-style: none
+    margin: 0
 
     li
-      display: inline
+      height: 50px
+      float: left
+
+      img
+        vertical-align: middle
 
       p
         display: inherit
+        font-size: 2em
+        color: $light-text-color
+        text-transform: uppercase
+        text-decoration: none
+        margin: 0
+        font-family: Helvetica, Arial, sans-serif
 
 .topmenu
   list-style: none
+  float: right
 
   li
     display: inline
+    margin-left: 10px
+
+    a
+      color: $light-text-color
+      text-transform: uppercase
+      text-decoration: none
+      font-size: 0.9em
+      transition: color .15s ease-in-out
+
+    &:hover
+      a
+        color: $accent
 
   .submenu
     display: none
@@ -82,13 +126,27 @@ ul
   display: -webkit-flex
   display: -ms-flex
   display: flex
-  min-height: 100vh
+  align-items: center
+  justify-content: space-around
+  text-align: center
+  height: 100vh
   background:
     image: url('../images/mainImg2.jpg')
     position: center center
     size: cover
     repeat: no-repeat
     attachment: fixed
+
+#overlay
+  width: 100%
+  background-color: rgba(0, 0, 0, 0.3)
+  padding: 20px 0
+
+  h1
+    color: $accent
+
+  p
+    color: $light-text-color
 
 
 #serviceList
@@ -99,7 +157,7 @@ ul
 
 .service_container
   margin: 0
-  padding: 20px
+  padding: 40px
   text-align: center
   flex:
     grow: 1
@@ -107,6 +165,12 @@ ul
 
   > p
     text-align: justify
+
+.serviceTitle
+  h3
+    background-color: $accent
+    color: #fff
+    padding: 5px 0
 
 .bg_header
   display: block
