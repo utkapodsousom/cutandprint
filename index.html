@@ -93,7 +93,7 @@
 		</section>
 		<!-- end of serviceList -->
 
-		<div id="price">
+		<main id="price">
 			<section id="priceScreen" class="contentContainer">
 				<div class="bg_header">
 					<img src="images/screenHeader.jpg" alt="Шелкография в СПб">
@@ -103,7 +103,7 @@
 					</div>
 				</div>
 				<div class="datagrid">
-					<table>
+					<table class="price_table">
 						<thead>
 							<tr>
 								<th>Цветов</th>
@@ -133,8 +133,6 @@
 								<td>А4</td>
 								<td>А3</td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
 								<td class="bold">1 цвет</td>
 								<td>1460</td>
@@ -153,8 +151,6 @@
 								<td>2930</td>
 								<td>3460</td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
 								<td class="bold">2 цвета</td>
 								<td>2080</td>
@@ -173,8 +169,6 @@
 								<td>5020</td>
 								<td>6090</td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
 								<td class="bold">3 цвета</td>
 								<td>2710</td>
@@ -193,8 +187,6 @@
 								<td>7110</td>
 								<td>8710</td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
 								<td class="bold">4 цвета</td>
 								<td>3330</td>
@@ -217,7 +209,7 @@
 					</table>
 				</div>
 				<div class="notice">
-					<p>*Печать методом шелкографии производится на любых плоских материалах, максимальный формат печати А1. При печати на сложных и не ровных поверхностях цена оговаривается отдельно.</p>
+					<p><span class="ast">*</span>Печать методом шелкографии производится на любых плоских материалах, максимальный формат печати А1. При печати на сложных и не ровных поверхностях цена оговаривается отдельно.</p>
 				</div>
 				<div class="keywords">
 					<p>Наша типография специализируется на трафаретной печати. Шелкография или трафаретная печать является одним из самых старых, универсальных и популярных методов печати текстов и изображений на любых поверхностях и материалах. Преимущества в использовании
@@ -229,19 +221,17 @@
 			</section>
 			<!-- end of priceScreen -->
 
-			<div id="priceCards" class="contentContainer">
-				<section>
-					<div class="bgHeader">
-						<img src="images/cardsHeader.jpg" alt="">
-						<div class="smallTitle">
-							<img src="images/bullet.png" alt="">
-							<h2>Визитки</h2>
-						</div>
+			<section id="priceCards" class="contentContainer">
+				<div class="bg_header">
+					<img src="images/cardsHeader.jpg" alt="">
+					<div class="small_title">
+						<img src="images/bullet.png" alt="">
+						<h3>Визитки</h3>
 					</div>
-				</section>
+				</div>
 				<div class="datagrid">
 					<h2>Шелкография</h2>
-					<table>
+					<table class="price_table">
 						<thead>
 							<tr>
 								<th>Цветов</th>
@@ -252,51 +242,53 @@
 								<th>500шт</th>
 							</tr>
 						</thead>
-						<tbody class="highlight">
+						<tbody>
 							<tr>
-								<td class="bold">1 цвет</td>
+								<td>1 цвет</td>
 								<td>700</td>
 								<td>900</td>
 								<td>1200</td>
 								<td>1450</td>
 								<td>1700</td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
-								<td class="bold">2 цвета</td>
+								<td>2 цвета</td>
 								<td>900</td>
 								<td>1300</td>
 								<td>1750</td>
 								<td>2100</td>
 								<td>2450</td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
-								<td class="bold">3 цвета</td>
+								<td>3 цвета</td>
 								<td>1270</td>
 								<td>1680</td>
 								<td>2250</td>
 								<td>2800</td>
 								<td>3250</td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
-								<td class="bold">4 цвета</td>
+								<td>4 цвета</td>
 								<td>1600</td>
 								<td>2100</td>
 								<td>2750</td>
 								<td>3300</td>
 								<td>3900</td>
 							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
 						</tbody>
 					</table>
 				</div>
 				<div class="datagrid">
 					<h2>Цифровая печать</h2>
-					<table>
+					<table class="price_table">
 						<thead>
 							<tr>
 								<th>Цветность</th>
@@ -312,10 +304,8 @@
 								<td>300</td>
 								<td>400</td>
 								<td>500</td>
-								<td>&#62; 600</td>
+								<td>&gt; 600</td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
 								<td>4+0</td>
 								<td>180</td>
@@ -326,8 +316,6 @@
 								<td>1080</td>
 								<td>2</td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
 								<td>4+4</td>
 								<td>300</td>
@@ -343,8 +331,8 @@
 				</div>
 				<div class="datagrid">
 					<h2>Доплата за материал руб./шт.</h2>
-					<table>
-						<tbody class="highlight">
+					<table class="price_table">
+						<tbody>
 							<tr>
 								<td>Бумага прорезиненная (Touche Cover)</td>
 								<td>5</td>
@@ -366,25 +354,23 @@
 						<a href="#contacts">Контакты</a>)
 					</p>
 				</div>
-			</div>
+			</section>
 			<!-- end of priceCards -->
 
-			<div id="pricePakety" class="contentContainer">
-				<section>
-					<div class="bgHeader">
-						<img src="images/paketyHeader.jpg" alt="">
-						<div class="smallTitle">
-							<img src="images/bullet.png" alt="">
-							<h2>Пакеты</h2>
-						</div>
+			<section id="pricePakety" class="contentContainer">
+				<div class="bg_header">
+					<img src="images/paketyHeader.jpg" alt="">
+					<div class="small_title">
+						<img src="images/bullet.png" alt="">
+						<h3>Пакеты</h3>
 					</div>
-				</section>
+				</div>
 				<div class="datagrid">
 					<h2>ПВД пакеты</h2>
-					<table>
+					<table class="price_table">
 						<thead>
 							<tr>
-								<th class="bold">Цвет</th>
+								<th>Цвет</th>
 								<th colspan="6">Размер см</th>
 							</tr>
 						</thead>
@@ -398,8 +384,6 @@
 								<td>60х50</td>
 								<td>70х50</td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
 								<td>белый</td>
 								<td>2,6</td>
@@ -409,10 +393,8 @@
 								<td>11,7</td>
 								<td>13</td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
-								<td>цветной*</td>
+								<td>цветной<span class="ast">*</span></td>
 								<td>2,9</td>
 								<td>5,5</td>
 								<td>8,1</td>
@@ -420,8 +402,6 @@
 								<td>12,7</td>
 								<td>13,5</td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
 								<td>золотой</td>
 								<td></td>
@@ -434,18 +414,18 @@
 						</tbody>
 					</table>
 				</div>
-				<div class="size">
-					<p>*- доступные цвета для размера 22,5×34 — ярко синий</p>
-					<p>*- доступные цвета для размера 30×40 — серебро, черный, синий, красный.</p>
-					<p>*- доступные цвета для размера 38×50 — серебро, синий, оранжевый, красный, зеленый, черный, бежевый, фиолетовый, серый.</p>
-					<p>*- доступные цвета для размера 45×50 — синий, черный.</p>
-					<p>*- доступные цвета для размера 60×50 — синий, черный.</p>
-					<p>*- доступные цвета для размера 70×50 —черный.</p>
+				<div class="notice">
+					<p><span class="ast">*</span>- доступные цвета для размера 22,5×34 — ярко синий</p>
+					<p><span class="ast">*</span>- доступные цвета для размера 30×40 — серебро, черный, синий, красный.</p>
+					<p><span class="ast">*</span>- доступные цвета для размера 38×50 — серебро, синий, оранжевый, красный, зеленый, черный, бежевый, фиолетовый, серый.</p>
+					<p><span class="ast">*</span>- доступные цвета для размера 45×50 — синий, черный.</p>
+					<p><span class="ast">*</span>- доступные цвета для размера 60×50 — синий, черный.</p>
+					<p><span class="ast">*</span>- доступные цвета для размера 70×50 —черный.</p>
 				</div>
 				<div class="keywords">
 					<div class="datagrid">
 						<h2>Бумажные пакеты</h2>
-						<table>
+						<table class="price_table">
 							<thead>
 								<tr>
 									<th rowspan="2">Используемый материал</th>
@@ -457,66 +437,56 @@
 								<tr>
 									<td></td>
 									<td></td>
-									<td>&#60; 300</td>
-									<td>&#62; 301</td>
+									<td>&lt; 300</td>
+									<td>&gt; 301</td>
 								</tr>
-							</tbody>
-							<tbody class="highlight">
 								<tr>
 									<td rowspan="2">Бумага с тиснением Имитлин 125 гр/м2</td>
 									<td>Размер №1</td>
 									<td>98</td>
 									<td>82</td>
 								</tr>
-							</tbody>
-							<tbody class="highlight">
 								<tr>
-									<td></td>
 									<td>Размер №2</td>
 									<td>125</td>
 									<td>109</td>
 								</tr>
-							</tbody>
-							<tbody class="highlight">
 								<tr>
 									<td rowspan="2">Белая бумага Симбол Бэгз 165 гр/м2</td>
 									<td>Размер №1</td>
 									<td>74</td>
 									<td>59</td>
 								</tr>
-							</tbody>
-							<tbody class="highlight">
 								<tr>
-									<td></td>
 									<td>Размер №2</td>
 									<td>88</td>
 									<td>72</td>
 								</tr>
 							</tbody>
 						</table>
-						<div class="size">
+						<div class="notice">
 							<p>Размеры пакетов № 1: 250x390x90мм.; 250x350x80мм.; 350x250x80мм.; 250x400x80мм.; 200x300x90мм.; 100x400x90мм.(под шампанское).</p>
 							<p>Размеры пакетов № 2: 320x420x13мм.; 420x300x90мм.; 300x420x90мм.; 300x450x100мм.</p>
 						</div>
 					</div>
-					<p>Чтобы подчеркнуть свой статус или акцентировать неравнодушное отношение к заказчикам большинство фирм заботятся о таких мелочах как фирменные пакеты. Наравне с функциональностью и практичностью пакеты выполняют достаточно эффективные рекламные функции.
-						Наши пакеты отличаются качеством материала и стойкостью нанесенной краски, поэтому долго будут носить рекламную информацию о вашей фирме.</p>
+					<div class="keywords">
+						<p>Чтобы подчеркнуть свой статус или акцентировать неравнодушное отношение к заказчикам большинство фирм заботятся о таких мелочах как фирменные пакеты. Наравне с функциональностью и практичностью пакеты выполняют достаточно эффективные рекламные функции.
+							Наши пакеты отличаются качеством материала и стойкостью нанесенной краски, поэтому долго будут носить рекламную информацию о вашей фирме.</p>
+					</div>
 				</div>
-			</div>
+			</section>
 			<!-- end of pricePakety -->
 
-			<div id="priceDigital" class="contentContainer">
-				<section>
-					<div class="bgHeader">
-						<img src="images/digitalHeader.jpg" alt="">
-						<div class="smallTitle">
-							<img src="images/bullet.png" alt="">
-							<h2>Цифровая печать</h2>
-						</div>
+			<section id="priceDigital" class="contentContainer">
+				<div class="bg_header">
+					<img src="images/digitalHeader.jpg" alt="">
+					<div class="small_title">
+						<img src="images/bullet.png" alt="">
+						<h3>Цифровая печать</h3>
 					</div>
-				</section>
+				</div>
 				<div class="datagrid">
-					<table>
+					<table class="price_table">
 						<thead>
 							<tr>
 								<th rowspan="2">Формат</th>
@@ -532,10 +502,8 @@
 								<td>50-99</td>
 								<td>100-199</td>
 								<td>200-299</td>
-								<td>&#62; 300</td>
+								<td>&gt; 300</td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
 								<td>A4</td>
 								<td>35</td>
@@ -546,8 +514,6 @@
 								<td>17</td>
 								<td>14</td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
 								<td>A3, SRA3</td>
 								<td>55</td>
@@ -563,7 +529,7 @@
 				</div>
 				<div class="datagrid">
 					<h2>Доплата за материалы</h2>
-					<table>
+					<table class="price_table">
 						<thead>
 							<tr>
 								<th rowspan="2">Плотность гр&#47;м<sup>2</sup></th>
@@ -589,8 +555,6 @@
 								<td>80</td>
 								<td>160</td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
 								<td>A4</td>
 								<td>2</td>
@@ -607,8 +571,6 @@
 								<td>1</td>
 								<td>3</td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
 								<td>A3, SRA3</td>
 								<td>5</td>
@@ -629,7 +591,7 @@
 					</table>
 				</div>
 				<div class="datagrid">
-					<table>
+					<table class="price_table">
 						<thead>
 							<tr>
 								<th rowspan="2"></th>
@@ -638,6 +600,41 @@
 								<th rowspan="2">бумага кат.3</th>
 								<th rowspan="2">Калька</th>
 								<th rowspan="2">Прозрачная пленка</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Плотность гр&#47;м<sup>2</sup></td>
+								<td>280-310</td>
+								<td>250-300</td>
+								<td>250-280</td>
+								<td>80</td>
+								<td>130</td>
+							</tr>
+							<tr>
+								<td>A4</td>
+								<td>32</td>
+								<td>43</td>
+								<td>67</td>
+								<td>16</td>
+								<td>54</td>
+							</tr>
+							<tr>
+								<td>A3, SRA3</td>
+								<td>64</td>
+								<td>86</td>
+								<td>135</td>
+								<td>32</td>
+								<td>108</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="datagrid">
+					<table class="price_table">
+						<thead>
+							<tr>
+								<th rowspan="2"></th>
 								<th rowspan="2">Пластик мат&#47;глянец</th>
 								<th colspan="3">Самоклеющиеся материалы</th>
 							</tr>
@@ -646,52 +643,26 @@
 							<tr>
 								<td></td>
 								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
 								<td>Бумага мат&#47;глянец</td>
 								<td>Пленка винил</td>
 								<td>Прозрачная пленка</td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
 								<td>Плотность гр&#47;м<sup>2</sup></td>
-								<td>280-310</td>
-								<td>250-300</td>
-								<td>250-280</td>
-								<td>80</td>
-								<td>130</td>
 								<td>240</td>
 								<td>-</td>
 								<td>-</td>
 								<td>-</td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
 								<td>A4</td>
-								<td>32</td>
-								<td>43</td>
-								<td>67</td>
-								<td>16</td>
-								<td>54</td>
 								<td>75</td>
 								<td>18</td>
 								<td>46</td>
 								<td>23</td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
 								<td>A3, SRA3</td>
-								<td>64</td>
-								<td>86</td>
-								<td>135</td>
-								<td>32</td>
-								<td>108</td>
 								<td>151</td>
 								<td>36</td>
 								<td>93</td>
@@ -700,22 +671,20 @@
 						</tbody>
 					</table>
 				</div>
-			</div>
+			</section>
 			<!-- end of priceDigital -->
 
-			<div id="priceWide" class="contentContainer">
-				<section>
-					<div class="bgHeader">
-						<img src="images/wideHeader.jpg" alt="">
-						<div class="smallTitle">
-							<img src="images/bullet.png" alt="">
-							<h2>Широкоформатная печать</h2>
-						</div>
+			<section id="priceWide" class="contentContainer">
+				<div class="bg_header">
+					<img src="images/wideHeader.jpg" alt="">
+					<div class="small_title">
+						<img src="images/bullet.png" alt="">
+						<h3>Широкоформатная печать</h3>
 					</div>
-				</section>
+				</div>
 				<div class="datagrid">
 					<h2>Интерьерная печать</h2>
-					<table>
+					<table class="price_table">
 						<thead>
 							<tr>
 								<th rowspan="2">Материал</th>
@@ -734,8 +703,6 @@
 								<td>А0</td>
 								<td>1м<sup>2</sup></td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
 								<td>Матовая фотобумага</td>
 								<td>180 гр&#47;м<sup>2</sup></td>
@@ -745,8 +712,6 @@
 								<td>1200</td>
 								<td>1200</td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
 								<td>Глянцевая/полуглянцевая<br>фотобумага</td>
 								<td>190 гр&#47;м<sup>2</sup></td>
@@ -756,8 +721,6 @@
 								<td>1300</td>
 								<td>1300</td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
 								<td>Холст</td>
 								<td>350 гр&#47;м<sup>2</sup></td>
@@ -782,7 +745,7 @@
 
 				<div class="datagrid">
 					<h2>Черно-белая печать чертежей</h2>
-					<table>
+					<table class="price_table">
 						<thead>
 							<tr>
 								<th rowspan="2">Материал</th>
@@ -799,8 +762,6 @@
 								<td>А0</td>
 								<td>1м<sup>2</sup></td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
 								<td>Бумага 80 гр&#47;м<sup>2</sup></td>
 								<td>7</td>
@@ -815,7 +776,7 @@
 				</div>
 				<div class="datagrid">
 					<h2>Цветная печать чертежей</h2>
-					<table>
+					<table class="price_table">
 						<thead>
 							<tr>
 								<th rowspan="2">Материал</th>
@@ -832,8 +793,6 @@
 								<td>А0</td>
 								<td>1м<sup>2</sup></td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
 								<td>Бумага 80 гр&#47;м<sup>2</sup></td>
 								<td>35</td>
@@ -843,8 +802,6 @@
 								<td>400</td>
 								<td>400</td>
 							</tr>
-						</tbody>
-						<tbody class="highlight">
 							<tr>
 								<td>Бумага 180 гр&#47;м<sup>2</sup></td>
 								<td>65</td>
@@ -859,44 +816,40 @@
 				</div>
 				<div class="keywords">
 					<p>Наша типография осуществляет печать и резку чертежей различных форматов – А0, А1, А2, А3, А4. Печать осуществляется на качественной инженерной бумаге в цветном и черно-белом режиме. Так же есть возможность печатать чертежи на более плотном материале
-						(матовая бумага 180 гр.) Группам студентов скидки!</p>
+						(матовая бумага 180 гр.). Группам студентов скидки!</p>
 				</div>
-			</div>
+			</section>
 			<!-- end of priceWide -->
-		</div>
+		</main>
 		<!-- end of price -->
 
 		<div id="paynget" class="contentContainer">
-			<section>
-				<div class="bgHeader">
-					<img src="images/deliveryHeader.jpg" alt="">
-					<div class="smallTitle">
-						<img src="images/bullet.png" alt="">
-						<h2>Доставка</h2>
-					</div>
+			<div class="bg_header">
+				<img src="images/deliveryHeader.jpg" alt="">
+				<div class="small_title">
+					<img src="images/bullet.png" alt="">
+					<h3>Доставка</h3>
 				</div>
-			</section>
-			<div class="content">
-				<div class="borderOrange">
+			</div>
+			<div class="paynget_block">
+				<div class="border_orange">
 					<p>Доставка в пределах КАД осуществляется нашим курьером. Стоимость доставки составляет 500р</p>
 					<p>Доставка в регионы осуществляется транспортными компаниями.</p>
 				</div>
-				<div class="borderOrange2">
+				<div class="border_orange">
 					<p>При заказе на сумму от 5000р доставка по Спб - БЕСПЛАТНО!</p>
 				</div>
 			</div>
 		</div>
 
-		<div id="contacts" class="contentContainer">
-			<section>
-				<div class="bgHeader">
-					<img src="images/contactsHeader.jpg" alt="">
-					<div class="smallTitle">
-						<img src="images/bullet.png" alt="">
-						<h2>Контакты</h2>
-					</div>
+		<section id="contacts" class="contentContainer">
+			<div class="bg_header">
+				<img src="images/contactsHeader.jpg" alt="">
+				<div class="small_title">
+					<img src="images/bullet.png" alt="">
+					<h3>Контакты</h3>
 				</div>
-			</section>
+			</div>
 			<div class="narrowContainer">
 				<div id="contactInfo">
 					<ul>
@@ -940,15 +893,15 @@
 				<div id="myMap" class="smallMap"></div>
 			</div>
 			<!-- narrowContainer -->
-		</div>
+		</section>
 		<!-- end of contacts -->
 
 		<footer>
 			<div id="copyrights">
-				<p>© CutAndPrint 2014</p>
+				<p>© CutAndPrint <span class="year">2017</span></p>
 			</div>
 			<div id="social">
-				<a href="http://vk.com/cutandprint" title="Мы ВКонтакте" target="_blank"><span id="vk">Мы ВКонтакте</span></a>
+				<a href="http://vk.com/cutandprint" title="Мы ВКонтакте" target="_blank" rel="nofollow"><span id="vk">Мы ВКонтакте</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.999984 99.999984" height="100" width="100"><path d="M15.41 0h69.18C93.1 0 100 6.9 100 15.41v69.18C100 93.1 93.1 100 84.59 100H15.41C6.9 100 0 93.1 0 84.59V15.41C0 6.9 6.9 0 15.41 0" fill="#4c6fa2" fill-rule="evenodd"/><path d="M72.652 50.833s8.64-12.189 9.5-16.194c.285-1.43-.344-2.232-1.832-2.232h-7.496c-1.717 0-2.347.743-2.862 1.83 0 0-4.053 8.637-8.984 14.078-1.583 1.76-2.388 2.289-3.262 2.289-.705 0-1.03-.588-1.03-2.174V34.524c0-1.945-.229-2.518-1.83-2.518H42.837c-.916 0-1.488.533-1.488 1.259 0 1.832 2.804 2.246 2.804 7.21v10.243c0 2.06-.114 2.862-1.087 2.862-2.575 0-8.698-8.87-12.131-18.941-.687-2.06-1.431-2.633-3.377-2.633h-7.496c-1.087 0-1.889.744-1.889 1.831 0 2.003 2.347 11.273 11.56 23.691 6.18 8.355 14.306 12.876 21.63 12.876 4.464 0 5.551-.744 5.551-2.633v-6.409c0-1.602.63-2.289 1.545-2.289 1.03 0 2.848.331 7.096 4.521 5.036 4.807 5.38 6.81 8.126 6.81h8.412c.858 0 1.66-.401 1.66-1.831 0-1.89-2.461-5.265-6.238-9.271-1.545-2.06-4.063-4.292-4.864-5.321-1.144-1.202-.801-1.89 0-3.148" fill="#fff"/></svg></a>
 			</div>
 		</footer>
 		<!-- end of footer -->
